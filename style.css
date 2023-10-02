@@ -58,8 +58,8 @@ html{
   }
  .about-section-card-img{
   border-radius:0px !important;  
-  min-height: 85vh;
-  max-height: 85vh;
+  min-height: 80vh;
+  max-height: 80vh;
  }
  .about-section-card-title{
   color: firebrick;  
@@ -112,8 +112,8 @@ html{
  /* about section div part 2 */
  .about-section-contenttext{
   background-color: rgb(63, 98, 114);
-  min-height: 85vh;
-  max-height: 85vh;
+  min-height: 80vh;
+  max-height: 80vh;
  }
 
 /* Product section */
@@ -142,21 +142,97 @@ html{
   }
 }
 /* Media part */
-  @media (max-width:1222px){
+  @media  only screen and (max-width:576px){
+    .imageslide{
+      min-height: 30vh;
+      max-height: 30vh;
+    }
+    .about-section-card-img{
+      min-height: 100vh;
+      max-height: 100vh;
+    }
+    .about-section-contenttext{
+      min-height: 100vh;
+      max-height: 100vh;
+    }
+    .about-section-headertext-div2{
+      font-size: 1.4rem;
+      font-weight:bold;
+    }
+    .about-section-Paratext-div2{
+      font-size: 1rem;
+    }
+  }
+  @media  only screen and (max-width:767px) and (min-width:577px){
+    .imageslide{
+      min-height: 50vh;
+      max-height: 50vh;
+    }
+    .about-section-card-img{
+      min-height: 60vh;
+      max-height: 60vh;
+    }
+  }
+  @media  only screen and (max-width:992px) and (min-width:768px){
+    .imageslide{
+      min-height: 70vh;
+      max-height: 70vh;
+    }
+    .about-section-card-img{
+      min-height: 93vh;
+      max-height: 93vh;
+    }
+    .about-section-contenttext{
+      min-height: 93vh;
+      max-height: 93vh;
+    }
+    .about-section-headertext-div2{
+      font-size: 1.5rem;
+      font-weight:bold;
+    }
+    .about-section-Paratext-div2{
+      font-size: 1rem;
+    }
+    /* .about-section-card-title{
+      font-size: 8rem;
+      font-weight:bolder;
+     }
+    .about-section-card-text1{  
+      font-size: 1.5rem;
+      font-weight:bold;
+     }
+     .about-section-card-text2{  
+      font-size: 2rem;
+      font-weight:bold;
+     } */
+  }
+  @media only screen and (max-width:1013px) and (min-width:993px){
+    .nav-link-a {
+      font-size: 1rem;
+      font-weight:bolder;
+    }
+  }
+  @media only screen and (max-width:1222px) and (min-width:1014px){
     .nav-link-a {
       font-size: 1.1rem;
       font-weight:bolder;
     }
-  }
-  @media (max-width:1013px){
-    .nav-link-a {
-      font-size: 1.0rem;
-      font-weight:bolder;
+    .about-section-card-img{
+      min-height: 76vh;
+      max-height: 76vh;
+    }
+    .about-section-contenttext{
+      min-height: 76vh;
+      max-height: 76vh;
     }
   }
-  @media (max-width:576px){
-    .imageslide{
-      min-height: 250px;
-      max-height: 250px;
+  /* @media only screen and (min-width:1223px){
+    .about-section-card-img{
+      min-height: 68vh;
+      max-height: 68vh;
     }
-  }
+    .about-section-contenttext{
+      min-height: 68vh;
+      max-height: 68vh;
+    }
+  } */
