@@ -9,15 +9,18 @@
     <link rel="stylesheet" href="/css/bootstrap.css">
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <!-- <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script> -->
+
 </head>
 
 <body>
     <header>
-        <nav class="navbar navbar-expand-lg border-bottom border-4 border-textdark navstyle">
+        <nav id="navbar-menu" class="navbar navbar-expand-lg border-bottom border-4 border-textdark navstyle">
             <div class="container-fluid">
                 <div class="col-9 col-sm-9 col-md-9 col-lg-4 my-auto">
                     <a class="navbar-brand text-dark text-left me-auto float-none" href="#">
-                        <img src="/Image/Logo full.png" alt="" width="130" height="124">
+                        <img id="Companylogo" src="/Image/Logo full.png" alt="" width="130" height="124">
                     </a>
                 </div>
                 <div class="col-3 col-sm-3 col-md-3 col-lg-1 my-auto">
@@ -61,14 +64,14 @@
         </nav>
     </header>
     <section>
-        <!-- <div class="container-fluid"> -->
-        <div id="carouselExampleDark" class="carousel carousel-dark slide" data-bs-ride="carousel">
+        <div id="carousel-slide-image" class="carousel carousel-dark slide carousel-slide-image-div"
+            data-bs-ride="carousel">
             <div class="carousel-indicators">
-                <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active"
+                <button type="button" data-bs-target="#carousel-slide-image" data-bs-slide-to="0" class="active"
                     aria-current="true" aria-label="Slide 1"></button>
-                <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1"
+                <button type="button" data-bs-target="#carousel-slide-image" data-bs-slide-to="1"
                     aria-label="Slide 2"></button>
-                <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2"
+                <button type="button" data-bs-target="#carousel-slide-image" data-bs-slide-to="2"
                     aria-label="Slide 3"></button>
             </div>
             <div class="carousel-inner">
@@ -94,32 +97,156 @@
                     </div>
                 </div>
             </div>
-            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark"
+            <button class="carousel-control-prev" type="button" data-bs-target="#carousel-slide-image"
                 data-bs-slide="prev">
                 <span class="carousel-control-prev-icon" aria-hidden="true"></span>
                 <span class="visually-hidden">Previous</span>
             </button>
-            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark"
+            <button class="carousel-control-next" type="button" data-bs-target="#carousel-slide-image"
                 data-bs-slide="next">
                 <span class="carousel-control-next-icon" aria-hidden="true"></span>
                 <span class="visually-hidden">Next</span>
             </button>
         </div>
-        <!-- </div> -->
     </section>
-    <section id="about">
-        <div class="container-fluid">
-            <div class="row">
-                <h2 class="text-center col-12">About</h2>
+    
+        <!-- It is used for highlight the current position of menu link -->
+    <div data-bs-spy="scroll" data-bs-target="#navbar-menu" data-bs-offset="0" tabindex="0">  
+        <!-- finish -->
+
+        <!-- about -->
+        <section id="about" style="background-color: rgb(238,238,238);">
+
+            <div class="about-section-header1 text-center">
+                <span style="--i:1">A</span>
+                <span style="--i:2">B</span>
+                <span style="--i:3">O</span>
+                <span style="--i:4">U</span>
+                <span style="--i:5">T</span>
             </div>
-        </div>
-    </section>
+            <h6 class="about-section-header2 text-center pb-3">Our Company</h6>
+            <div class="row g-0">
+                <div class="col-12 col-md-6 card about-section-card">
+                    <img src="/Image/bg6.jpg" class="card-img about-section-card-img" alt="..." />
+                    <div class="card-img-overlay pt-5">
+                        <h1 class="card-title text-center about-section-card-title" id="TotalYears"></h1>
+                        <p class="card-text text-center about-section-card-text1">
+                            Years' experience in IT
+                        </p>
+                        <p class="card-text text-center pt-5 about-section-card-text2">
+                            "We offer a comprehensive range of IT services dedicated to ensuring your success."
+                        </p>
+                    </div>
+                </div>
 
-
+                <div class="col-12 col-md-6 about-section-contenttext">
+                    <h3 class="text-center text-white about-section-headertext1 py-3" >Our Company</h3>   
+                    <p class="text-white text-left px-4">Kwickstacks Solutions is a leading company specializing in professional web
+                        development
+                        and mobile application solutions. We excel in crafting custom web development,
+                        mobile apps, enterprise portals, e-commerce applications, web design, HTML,
+                        iPhone/iOS/Android apps, and top-tier customer-related services for clients worldwide.
+                    </p>
+                    <h3 class="text-center text-white py-1">Our Vision</h3>
+                    <p class="text-white text-left px-4">Our vision is to become the world's premier mobile and web development
+                        company,
+                        driven by relentless innovation as the cornerstone of our journey toward
+                        unparalleled success. We aspire to attain global recognition by consistently
+                        delivering top-tier services and solutions of superior quality.
+                    </p>
+                    <h3 class="text-center text-white py-1">Our Mission</h3>
+                    <p class="text-white text-left px-4">As a professional web development, mobile application, and digital marketing
+                        company,
+                        our mission is to deliver customer-centric, result-oriented, cost-competitive,
+                        innovative, and functional IT solutions to our valued global clients.
+                    </p>
+                </div>
+            </div>
+        </section>
+        <!-- product -->     
+        <section id="product" style="height: 768px; background-color: rgb(238,238,238);">
+            <div class="product-section-header1 text-center">
+                <span style="--i:1">P</span>
+                <span style="--i:2">R</span>
+                <span style="--i:3">O</span>
+                <span style="--i:3">D</span>
+                <span style="--i:4">U</span>
+                <span style="--i:3">C</span>
+                <span style="--i:5">T</span>
+            </div>
+            <h6 class="product-section-header2 text-center pb-3">Our Product</h6>
+        </section>
+    </div>
+   <!-- Javascript file section -->
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
         integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p"
         crossorigin="anonymous"></script>
     <script src="/js/bootstrap.js"></script>
+    <script src="js/jquery.3.7.1.js"></script>
+    <!-- Get total years for company -->
+    <script type="text/javascript">
+        var startyear = '2020'
+        var endyear = new Date().getFullYear();
+        var totalyear = endyear - startyear;
+        document.getElementById('TotalYears').innerHTML = totalyear;
+        console.log(TotalYears);
+    </script>
+
+    <!-- It is used for after medium size pixel toggler menu link will show in top position  -->
+
+    <script type="text/javascript">
+        document.addEventListener("DOMContentLoaded", function () {
+
+            window.addEventListener('scroll', function () {
+
+                if (window.scrollY > 50) {
+                    document.getElementById('navbar-menu').classList.add('fixed-top');
+                    navbar_height = document.querySelector('.navbar').offsetHeight;
+                    document.body.style.paddingTop = navbar_height + 'px';
+                } else {
+                    document.getElementById('navbar-menu').classList.remove('fixed-top');
+                    document.body.style.paddingTop = '0';
+                }
+            });
+        }); 
+    </script>
+
+    <!-- menu size reduce & hide logo after mouse scroll  -->
+    <script type="text/javascript">
+        window.onscroll = function () { scrollFunction() };
+
+        function scrollFunction() {
+            if (document.body.scrollTop > 50 || document.documentElement.scrollTop > 50) {
+                document.getElementById("navbar-menu").style.padding = "10px 0px";
+                document.getElementById("Companylogo").style.display = 'none';
+            } else {
+                document.getElementById("navbar-menu").style.padding = "0px 0px";
+                document.getElementById("Companylogo").style.display = 'block';
+            }
+        }
+    </script>
+    <!-- click menu link and after set position of section page  -->
+    <script>
+        $(document).ready(function () {
+            $('a[href^="#"]').on('click', function (event) {
+                var target = $($(this).attr('href'));
+                if (target.length) {
+                    event.preventDefault();
+                    if (document.body.scrollTop > 80 || document.documentElement.scrollTop > 80) {
+
+                        $('html, body').stop().animate({
+                            scrollTop: target.offset().top - 50
+                        }, 500);
+                    } else {
+
+                        $('html, body').stop().animate({
+                            scrollTop: target.offset().top - 110
+                        }, 500);
+                    }
+                }
+            });
+        });
+    </script>
 </body>
 
 </html>
