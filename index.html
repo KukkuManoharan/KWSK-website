@@ -15,6 +15,7 @@
 </head>
 
 <body>
+    <!-- Menu navigation -->
     <header>
         <nav id="navbar-menu" class="navbar navbar-expand-lg border-bottom border-4 border-textdark navstyle">
             <div class="container-fluid">
@@ -109,26 +110,26 @@
             </button>
         </div>
     </section>
-    
-        <!-- It is used for highlight the current position of menu link -->
-    <div data-bs-spy="scroll" data-bs-target="#navbar-menu" data-bs-offset="0" tabindex="0">  
+
+    <!-- It is used for highlight the current position of menu link -->
+    <div data-bs-spy="scroll" data-bs-target="#navbar-menu" data-bs-offset="0" tabindex="0">
         <!-- finish -->
 
         <!-- about -->
         <section id="about" style="background-color: rgb(238,238,238);">
 
-            <div class="about-section-header1 text-center">
+            <div class="about-section-mainhead text-center">
                 <span style="--i:1">A</span>
                 <span style="--i:2">B</span>
                 <span style="--i:3">O</span>
                 <span style="--i:4">U</span>
                 <span style="--i:5">T</span>
             </div>
-            <h6 class="about-section-header2 text-center pb-3">Our Company</h6>
+            <h6 class="about-section-subhead text-center pb-3">Our Company</h6>
             <div class="row g-0">
                 <div class="col-12 col-md-6 card about-section-card">
                     <img src="Image/bg6.jpg" class="card-img about-section-card-img" alt="..." />
-                    <div class="card-img-overlay py-5">
+                    <div class="card-img-overlay py-5 overflow-auto">
                         <h1 class="card-title text-center about-section-card-title" id="TotalYears"></h1>
                         <p class="card-text text-center about-section-card-text1">
                             Years' experience in IT
@@ -139,23 +140,26 @@
                     </div>
                 </div>
 
-                <div class="col-12 col-md-6 about-section-contenttext py-1">
-                    <h3 class="text-center text-white py-3 about-section-headertext-div2" >Our Company</h3>   
-                    <p class="text-white text-left px-4 about-section-Paratext-div2">Kwickstacks Solutions is a leading company specializing in professional web
+                <div class="col-12 col-md-6 about-section-contenttext py-1 overflow-auto">
+                    <h3 class="text-center text-white py-3 about-section-headertext-div2">Our Company</h3>
+                    <p class="text-white text-left px-4 about-section-Paratext-div2">Kwickstacks Solutions is a leading
+                        company specializing in professional web
                         development
                         and mobile application solutions. We excel in crafting custom web development,
                         mobile apps, enterprise portals, e-commerce applications, web design, HTML,
                         iPhone/iOS/Android apps, and top-tier customer-related services for clients worldwide.
                     </p>
                     <h3 class="text-center text-white py-1 about-section-headertext-div2">Our Vision</h3>
-                    <p class="text-white text-left px-4 about-section-Paratext-div2">Our vision is to become the world's premier mobile and web development
+                    <p class="text-white text-left px-4 about-section-Paratext-div2">Our vision is to become the world's
+                        premier mobile and web development
                         company,
                         driven by relentless innovation as the cornerstone of our journey toward
                         unparalleled success. We aspire to attain global recognition by consistently
                         delivering top-tier services and solutions of superior quality.
                     </p>
                     <h3 class="text-center text-white py-1 about-section-headertext-div2">Our Mission</h3>
-                    <p class="text-white text-left px-4 about-section-Paratext-div2">As a professional web development, mobile application, and digital marketing
+                    <p class="text-white text-left px-4 about-section-Paratext-div2">As a professional web development,
+                        mobile application, and digital marketing
                         company,
                         our mission is to deliver customer-centric, result-oriented, cost-competitive,
                         innovative, and functional IT solutions to our valued global clients.
@@ -163,9 +167,9 @@
                 </div>
             </div>
         </section>
-        <!-- product -->     
-        <section id="product" style="height: 768px; background-color: rgb(238,238,238);">
-            <div class="product-section-header1 text-center">
+        <!-- product -->
+        <section id="product" style="background-color:  rgb(238,238,238)">
+            <div class="product-section-mainhead text-center">
                 <span style="--i:1">P</span>
                 <span style="--i:2">R</span>
                 <span style="--i:3">O</span>
@@ -174,10 +178,213 @@
                 <span style="--i:3">C</span>
                 <span style="--i:5">T</span>
             </div>
-            <h6 class="product-section-header2 text-center pb-3">Our Product</h6>
+            <h6 class="product-section-subhead text-center pb-3">Our Product</h6>
+
+            <div class="testimonial-slider">
+                <div id="carouselProductId" class="carousel carousel-dark" data-bs-ride="carousel">
+                    <div class="container-fluid">
+                        <div class="row">
+                            <div class="col-md-4">
+                                <div class="testimonial-title">
+                                    <h2 class="fw-bold display-6">Our Products</h2>
+                                </div>
+                                <button class="carousel-control-prev carousel-control-prev-product" type="button"
+                                    data-bs-target="#carouselProductId" data-bs-slide="prev">
+                                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                    <span class="visually-hidden">Previous</span>
+                                </button>
+                                <button class="carousel-control-next carousel-control-next-product" type="button"
+                                    data-bs-target="#carouselProductId" data-bs-slide="next">
+                                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                    <span class="visually-hidden">Next</span>
+                                </button>
+                            </div>
+                            <div class="col-md-8">
+                                <div class="carousel-inner carousel-inner-product">
+                                    <div class="carousel-item carousel-item-product active">
+                                        <div class="card card-product">
+                                            <div class="img-wrapper text-center mx-auto pt-3"><img
+                                                    class="d-block img-wrapper-product" src="Image/Score.png"
+                                                    alt="Score">
+                                            </div>
+                                            <div class="card-body">
+                                                <h4 class="card-title text-center pt-4">Smart Core Banking</h4>
+                                                <p class="card-text pt-3">Introducing Kerala's premier web-based core
+                                                    banking software, offering effortless and efficient banking with
+                                                    real-time transaction management and valuable data for future
+                                                    strategies. The Score software accelerates transactions for
+                                                    professionals, revolutionizing banking, especially in rural Kerala.
+                                                    It modernizes age-old investments and assets, aligning with the
+                                                    latest banking trends, all while providing a highly user-friendly,
+                                                    fast, secure, and enjoyable banking experience.
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="carousel-item carousel-item-product">
+                                        <div class="card card-product">
+                                            <div class="img-wrapper text-center mx-auto pt-3"><img
+                                                    class="d-block img-wrapper-product" src="Image/Empower.png"
+                                                    alt="Empower">
+                                            </div>
+                                            <div class="card-body">
+                                                <h4 class="card-title text-center pt-4">Empower</h4>
+                                                <p class="card-text pt-3">EMPOWER is a comprehensive web-based HRM and
+                                                    payroll solution that streamlines HR processes from recruitment to
+                                                    retirement. It saves businesses time and lets them concentrate on
+                                                    core tasks. Empower handles salary management, recruitment, employee
+                                                    data, biometric integration, shift scheduling, and all HR-related
+                                                    data management. It also generates reports for HR departments and
+                                                    business owners to analyze critical workforce metrics, including
+                                                    staffing, compensation costs, and turnover.
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="carousel-item carousel-item-product">
+                                        <div class="card card-product">
+                                            <div class="img-wrapper text-center mx-auto pt-3"><img
+                                                    class="d-block img-wrapper-product" src="Image/Bizcore.png"
+                                                    alt="Bizcore">
+                                            </div>
+                                            <div class="card-body">
+                                                <h4 class="card-title text-center pt-4">Bizcore</h4>
+                                                <p class="card-text pt-3">BIZcore Next Generation BC concept for
+                                                    Co-Operative Banks, with appointed business correspondents bringing
+                                                    banking services closer to customers. The Bizcore app is a
+                                                    comprehensive solution, offering services like account opening,
+                                                    online deposits, agent and client reports, and balance inquiries,
+                                                    ensuring real-time and secure banking for a user-friendly
+                                                    experience.
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="carousel-item carousel-item-product">
+                                        <div class="card card-product">
+                                            <div class="img-wrapper text-center mx-auto pt-3"><img
+                                                    class="d-block img-wrapper-product" src="Image/Mscore.png"
+                                                    alt="M-Score">
+                                            </div>
+                                            <div class="card-body">
+                                                <h4 class="card-title text-center pt-4">M-Score</h4>
+                                                <p class="card-text pt-3">M-Score is the mobile version of our Smart
+                                                    core banking system 'Score,' compatible with Android and iOS
+                                                    devices. It empowers customers to efficiently track their bank
+                                                    transactions via a mobile app, facilitating speed and reliability.
+                                                    Leading banks use M-Score to offer personalized banking apps, stay
+                                                    digitally updated, and ensure the latest security measures. It
+                                                    provides account info, fund transfers (IMPS/NEFT/RTGS), passbook,
+                                                    statements, virtual cards, online payments, and user dashboards.
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="carousel-item carousel-item-product">
+                                        <div class="card card-product">
+                                            <div class="img-wrapper text-center mx-auto pt-3"><img
+                                                    class="d-block img-wrapper-product" src="Image/Score connect.png"
+                                                    alt="Score Connect">
+                                            </div>
+                                            <div class="card-body">
+                                                <h4 class="card-title text-center pt-4">Score Connect</h4>
+                                                <p class="card-text pt-3">Score Connect is a mobile application designed
+                                                    to streamline loan tracking and overdue monitoring for banks and
+                                                    societies. This automated solution simplifies the loan recovery
+                                                    process by sending notifications for due dates, facilitating easy
+                                                    communication, and allowing updates on the reasons for delays and
+                                                    repayment dates. It also enables the assignment of specific loan
+                                                    accounts to monitoring personnel, based on various criteria such as
+                                                    geographical area, account number combinations, and account types.
+                                                    This results in a hassle-free and efficient loan recovery process.
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="carousel-item carousel-item-product">
+                                        <div class="card card-product">
+                                            <div class="img-wrapper text-center mx-auto pt-3"><img
+                                                    class="d-block img-wrapper-product" src="Image/Score Nidhi.png"
+                                                    alt="Score Nidhi">
+                                            </div>
+                                            <div class="card-body">
+                                                <h4 class="card-title text-center pt-4">Score Nidhi</h4>
+                                                <p class="card-text pt-3">SCORE NIDHI is a specialized web-based
+                                                    software for NIDHI Companies. It automates banking and financial
+                                                    operations, enhancing profitability through advanced technology.
+                                                    This real-time core banking solution can be customized to meet
+                                                    specific client needs, boosting financial credibility and profits.
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="carousel-item carousel-item-product">
+                                        <div class="card card-product">
+                                            <div class="img-wrapper text-center mx-auto pt-3"><img
+                                                    class="d-block img-wrapper-product" src="Image/Easyshop.png"
+                                                    alt="Easyshop">
+                                            </div>
+                                            <div class="card-body">
+                                                <h4 class="card-title text-center pt-4">Easyshop</h4>
+                                                <p class="card-text pt-3">Easy Shop is a comprehensive web-based ERP
+                                                    platform designed for businesses like hypermarkets, offering
+                                                    360-degree inventory management and retail store management. It
+                                                    prioritizes inventory forecasting over billing, featuring
+                                                    state-of-the-art security measures. Highly customizable and
+                                                    compatible with both regular computers and point of sale machines,
+                                                    Easy Shop provides robust store management tools for precise
+                                                    managerial decision-making. This popular stock management software
+                                                    in Kerala enhances stock management, purchase tracking, and billing,
+                                                    reducing human errors in inventory management to transform
+                                                    businesses into efficient, process-oriented systems.
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="carousel-item carousel-item-product">
+                                        <div class="card card-product">
+                                            <div class="img-wrapper text-center mx-auto pt-3"><img
+                                                    class="d-block img-wrapper-product" src="Image/medlife.png"
+                                                    alt="Medlife">
+                                            </div>
+                                            <div class="card-body">
+                                                <h4 class="card-title text-center pt-4">Medlife</h4>
+                                                <p class="card-text pt-3">MEDLIFE is a pharmacy management software that
+                                                    simplifies your pharmacy operations, transforming your
+                                                    pharmaceutical business. This ERP solution exclusively addresses
+                                                    daily pharmacy challenges, managing inventory, sales, reports, drug
+                                                    expiry alerts, scheduled medicine tracking, and stock reorder
+                                                    levels. It supports touchscreen input and offers customized bill
+                                                    printing, aiding supply management. Additionally, it generates
+                                                    reports for GST filings.
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="carousel-item carousel-item-product">
+                                        <div class="card card-product">
+                                            <div class="img-wrapper text-center mx-auto pt-3"><img
+                                                    class="d-block img-wrapper-product" src="Image/icoms.jpg"
+                                                    alt="I-coms">
+                                            </div>
+                                            <div class="card-body">
+                                                <h4 class="card-title text-center pt-4">i-coms</h4>
+                                                <p class="card-text pt-3">i-coms is a information of co-operative overdue monitors system.
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
         </section>
     </div>
-   <!-- Javascript file section -->
+    <!-- Javascript file section -->
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
         integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p"
         crossorigin="anonymous"></script>
@@ -245,6 +452,80 @@
                     }
                 }
             });
+        });
+    </script>
+    <!-- Product section carousel slide-->
+    <script>
+        $(document).ready(function () {
+            var multipleCardCarousel = document.querySelector(
+                "#carouselProductId"
+            );
+            const mediapixelQueries = [
+                '(max-width:576px)',
+                '(max-width:767px) and (min-width:577px)',
+                '(min-width:768px) and (max-width:992px)',
+                '(min-width:993px) and (max-width:1013px)',
+                '(min-width:1014px) and (max-width:1222px)',
+                '(min-width:1223px)'
+            ];
+            const matchingpixelQuery = mediapixelQueries.find(mediapixelQueries =>
+                window.matchMedia(mediapixelQueries).matches
+            );
+            if (matchingpixelQuery == "(max-width:576px)") {
+                // console.log(1);
+                $(multipleCardCarousel).addClass("slide");
+            } else if (matchingpixelQuery == "(max-width:767px) and (min-width:577px)") {
+                // console.log(2);
+                $(multipleCardCarousel).addClass("slide");
+            } else if (matchingpixelQuery == "(min-width:768px) and (max-width:992px)") {
+                // console.log(4);
+                $(multipleCardCarousel).addClass("slide");
+            } else if (matchingpixelQuery == "(min-width:993px) and (max-width:1013px)") {
+                // console.log(5);
+                $(multipleCardCarousel).addClass("slide");
+            }
+            else if (matchingpixelQuery == "(min-width:1014px) and (max-width:1222px)") {
+                // console.log(6);
+                $(multipleCardCarousel).addClass("slide");
+            } else if (matchingpixelQuery == "(min-width:1223px)") {
+                // console.log(7);
+                var carousel = new bootstrap.Carousel(multipleCardCarousel, {
+                    interval: false,
+                    wrap: false
+                });
+                var carouselWidth = $(".carousel-inner-product")[0].scrollWidth;
+                var cardWidth = $(".carousel-item-product").width();
+                var scrollPosition = 0;
+                $("#carouselProductId .carousel-control-next-product").on("click", function () {
+                    if (scrollPosition < carouselWidth - cardWidth * 3) {
+                        var test = carouselWidth - cardWidth * 3;
+                        scrollPosition += cardWidth;
+                        $("#carouselProductId .carousel-inner-product").animate(
+                            { scrollLeft: scrollPosition },
+                            600
+                        );
+                    }
+                    else {
+                        scrollPosition = 0;
+                        scrollPosition += 0;
+                        $("#carouselProductId .carousel-inner-product").animate(
+                            { scrollLeft: scrollPosition },
+                            600
+                        );
+                    }
+                });
+                $("#carouselProductId .carousel-control-prev-product").on("click", function () {
+                    if (scrollPosition > 1) {
+                        scrollPosition -= cardWidth;
+                        $("#carouselProductId .carousel-inner-product").animate(
+                            { scrollLeft: scrollPosition },
+                            600
+                        );
+                    }
+                });
+            } else {
+                $(multipleCardCarousel).addClass("slide");
+            }
         });
     </script>
 </body>
