@@ -58,8 +58,8 @@ html{
   }
  .about-section-card-img{
   border-radius:0px !important;  
-  min-height: 80vh;
-  max-height: 80vh;
+  min-height: 85vh;
+  max-height: 85vh;
  }
  .about-section-card-title{
   color: firebrick;  
@@ -112,9 +112,10 @@ html{
  /* about section div part 2 */
  .about-section-contenttext{
   background-color: rgb(63, 98, 114);
-  min-height: 80vh;
-  max-height: 80vh;
+  min-height: 85vh;
+  max-height: 85vh;
  }
+ /* About section finish*/
 
 /* Product section */
 
@@ -176,9 +177,110 @@ html{
 }
 
 /* Product section testimonial-slider finish */
+/* Product section finish*/
+
+/* Services section */
+
+.services-section-mainhead span {
+  display: inline-block;
+  font-size: 5rem;
+  font-weight:bolder;
+  opacity: .7;
+  text-transform: uppercase;
+  animation: flip 3s infinite;
+  animation-delay: calc(.3s * var(--i))
+}
+
+.services-section-subhead{
+  font-size: 1rem;
+  font-weight:bold;
+  opacity: .4;
+}
+
+#cards_services {
+  text-align: center;
+  background: #F7F7F7;
+}
+#cards_services .container {
+  padding-top: 5px;
+  padding-bottom: 10px;
+}
+#cards_services a {
+  text-decoration: none;
+  outline: none;
+}
+#cards_services .card-flyer {
+  border-radius: 5px;
+}
+#cards_services .card-flyer .image-box {
+  background: #ffffff;
+  overflow: hidden;
+  box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.50);
+  border-radius: 5px;
+}
+#cards_services .card-flyer .image-box img {
+  -webkit-transition: all .9s ease;
+  -moz-transition: all .9s ease;
+  -o-transition: all .9s ease;
+  -ms-transition: all .9s ease;
+  width: 100%;
+  height: 250px;
+}
+#cards_services .card-flyer:hover .image-box img {
+  opacity: 0.7;
+  -webkit-transform: scale(1.15);
+  -moz-transform: scale(1.15);
+  -ms-transform: scale(1.15);
+  -o-transform: scale(1.15);
+  transform: scale(1.15);
+}
+#cards_services .card-flyer .text-box {
+  text-align: left;
+}
+#cards_services .card-flyer .text-box .text-container {
+  padding: 30px 18px;
+}
+#cards_services .card-flyer {
+  background: #FFFFFF;
+  margin-top: 50px;
+  -webkit-transition: all 0.2s ease-in;
+  -moz-transition: all 0.2s ease-in;
+  -ms-transition: all 0.2s ease-in;
+  -o-transition: all 0.2s ease-in;
+  transition: all 0.2s ease-in;
+  box-shadow: 0px 3px 4px rgba(0, 0, 0, 0.40);
+}
+#cards_services .card-flyer:hover {
+  background: #fff;
+  box-shadow: 0px 15px 26px rgba(0, 0, 0, 0.50);
+  -webkit-transition: all 0.2s ease-in;
+  -moz-transition: all 0.2s ease-in;
+  -ms-transition: all 0.2s ease-in;
+  -o-transition: all 0.2s ease-in;
+  transition: all 0.2s ease-in;
+  margin-top: 50px;
+}
+#cards_services .card-flyer .text-box li {
+  margin-top: 10px;
+  margin-bottom: 0px;
+  padding-bottom: 0px;
+  font-size: 14px;
+  letter-spacing: 1px;
+  color: #000000;
+}
+#cards_services .card-flyer .text-box h6 {
+  margin-top: 0px;
+  margin-bottom: 4px;
+  font-size: 18px;
+  font-weight: bold;
+  text-transform: uppercase;
+  font-family: 'Roboto Black', sans-serif;
+  letter-spacing: 1px;
+  color: #00acc1;
+}
 
 
-
+/* Services section finishes*/
 /* Section page main heading text flip */
 @keyframes flip {
   0%,80% {
