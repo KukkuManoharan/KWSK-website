@@ -43,10 +43,10 @@
                                 <a class="nav-link nav-link-a" href="#product">Product</a>
                             </li>
                             <li class="nav-item px-3">
-                                <a class="nav-link nav-link-a" href="#services">Services</a>
+                                <a class="nav-link nav-link-a" href="#services">Service</a>
                             </li>
                             <li class="nav-item px-3">
-                                <a class="nav-link nav-link-a" href="#clients">Our clients</a>
+                                <a class="nav-link nav-link-a" href="#clients">Client</a>
                             </li>
                             <li class="nav-item px-3">
                                 <a class="nav-link nav-link-a" href="#contact">Contact</a>
@@ -127,14 +127,13 @@
             </div>
             <h6 class="about-section-subhead text-center pb-3">Our Company</h6>
             <div class="row g-0">
-                <div class="col-12 col-md-6 card about-section-card">
-                    <img src="Image/bg6.jpg" class="card-img about-section-card-img" alt="..." />
-                    <div class="card-img-overlay py-5 overflow-auto">
-                        <h1 class="card-title text-center about-section-card-title" id="TotalYears"></h1>
-                        <p class="card-text text-center about-section-card-text1">
+                <div class="col-12 col-md-6 about-section-card">
+                    <div class="py-5 overflow-auto">
+                        <h1 class="text-center about-section-card-title" id="TotalYears"></h1>
+                        <p class="text-center about-section-card-text1">
                             Years' experience in IT
                         </p>
-                        <p class="card-text text-center pt-5 about-section-card-text2">
+                        <p class="text-center pt-5 about-section-card-text2">
                             "We offer a comprehensive range of IT services dedicated to ensuring your success."
                         </p>
                     </div>
@@ -393,7 +392,6 @@
                 <span style="--i:4">I</span>
                 <span style="--i:5">C</span>
                 <span style="--i:6">E</span>
-                <span style="--i:7">S</span>
             </div>
             <h6 class="services-section-subhead text-center pb-3">Our Service</h6>
 
@@ -607,8 +605,7 @@
 
                     </div>
                 </div>
-            </div><a style="font-size: 8pt; text-decoration: none" target="_blank"
-                href="http://frontendfreecode.com">Free Frontend</a>
+            </div>
 
         </section>
     </div>
@@ -692,9 +689,9 @@
                 '(max-width:576px)',
                 '(max-width:767px) and (min-width:577px)',
                 '(min-width:768px) and (max-width:992px)',
-                '(min-width:993px) and (max-width:1013px)',
-                '(min-width:1014px) and (max-width:1222px)',
-                '(min-width:1223px)'
+                // '(min-width:993px) and (max-width:1013px)',
+                // '(min-width:1014px) and (max-width:1222px)',
+                '(min-width:993px)'
             ];
             const matchingpixelQuery = mediapixelQueries.find(mediapixelQueries =>
                 window.matchMedia(mediapixelQueries).matches
@@ -708,14 +705,16 @@
             } else if (matchingpixelQuery == "(min-width:768px) and (max-width:992px)") {
                 // console.log(4);
                 $(multipleCardCarousel).addClass("slide");
-            } else if (matchingpixelQuery == "(min-width:993px) and (max-width:1013px)") {
-                // console.log(5);
-                $(multipleCardCarousel).addClass("slide");
-            }
-            else if (matchingpixelQuery == "(min-width:1014px) and (max-width:1222px)") {
-                // console.log(6);
-                $(multipleCardCarousel).addClass("slide");
-            } else if (matchingpixelQuery == "(min-width:1223px)") {
+            } 
+            // else if (matchingpixelQuery == "(min-width:993px) and (max-width:1013px)") {
+            //     // console.log(5);
+            //     $(multipleCardCarousel).addClass("slide");
+            // }
+            // else if (matchingpixelQuery == "(min-width:1014px) and (max-width:1222px)") {
+            //     // console.log(6);
+            //     $(multipleCardCarousel).addClass("slide");
+            // } 
+            else if (matchingpixelQuery == "(min-width:993px)") {
                 // console.log(7);
                 var carousel = new bootstrap.Carousel(multipleCardCarousel, {
                     interval: false,
