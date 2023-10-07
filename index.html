@@ -182,25 +182,12 @@
             <div class="testimonial-slider">
                 <div id="carouselProductId" class="carousel carousel-dark" data-bs-ride="carousel">
                     <div class="container-fluid">
+
                         <div class="row">
-                            <div class="col-md-4">
-                                <div class="testimonial-title">
-                                    <h2 class="fw-bold display-6">Our Products</h2>
-                                </div>
-                                <button class="carousel-control-prev carousel-control-prev-product" type="button"
-                                    data-bs-target="#carouselProductId" data-bs-slide="prev">
-                                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                                    <span class="visually-hidden">Previous</span>
-                                </button>
-                                <button class="carousel-control-next carousel-control-next-product" type="button"
-                                    data-bs-target="#carouselProductId" data-bs-slide="next">
-                                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                                    <span class="visually-hidden">Next</span>
-                                </button>
-                            </div>
-                            <div class="col-md-8">
+
+                            <div class="col-md-12">
                                 <div class="carousel-inner carousel-inner-product">
-                                    <div class="carousel-item carousel-item-product active">
+                                    <div class="carousel-item carousel-item-product active d-md-flex align-items-stretch">
                                         <div class="card card-product">
                                             <div class="img-wrapper text-center mx-auto pt-3"><img
                                                     class="d-block img-wrapper-product" src="Image/Score.png"
@@ -220,7 +207,7 @@
                                             </div>
                                         </div>
                                     </div>
-                                    <div class="carousel-item carousel-item-product">
+                                    <div class="carousel-item carousel-item-product d-md-flex align-items-stretch">
                                         <div class="card card-product">
                                             <div class="img-wrapper text-center mx-auto pt-3"><img
                                                     class="d-block img-wrapper-product" src="Image/Empower.png"
@@ -240,7 +227,7 @@
                                             </div>
                                         </div>
                                     </div>
-                                    <div class="carousel-item carousel-item-product">
+                                    <div class="carousel-item carousel-item-product d-md-flex align-items-stretch">
                                         <div class="card card-product">
                                             <div class="img-wrapper text-center mx-auto pt-3"><img
                                                     class="d-block img-wrapper-product" src="Image/Bizcore.png"
@@ -259,7 +246,7 @@
                                             </div>
                                         </div>
                                     </div>
-                                    <div class="carousel-item carousel-item-product">
+                                    <div class="carousel-item carousel-item-product d-md-flex align-items-stretch">
                                         <div class="card card-product">
                                             <div class="img-wrapper text-center mx-auto pt-3"><img
                                                     class="d-block img-wrapper-product" src="Image/Mscore.png"
@@ -279,7 +266,7 @@
                                             </div>
                                         </div>
                                     </div>
-                                    <div class="carousel-item carousel-item-product">
+                                    <div class="carousel-item carousel-item-product d-md-flex align-items-stretch">
                                         <div class="card card-product">
                                             <div class="img-wrapper text-center mx-auto pt-3"><img
                                                     class="d-block img-wrapper-product" src="Image/Score connect.png"
@@ -300,7 +287,7 @@
                                             </div>
                                         </div>
                                     </div>
-                                    <div class="carousel-item carousel-item-product">
+                                    <div class="carousel-item carousel-item-product d-md-flex align-items-stretch">
                                         <div class="card card-product">
                                             <div class="img-wrapper text-center mx-auto pt-3"><img
                                                     class="d-block img-wrapper-product" src="Image/Score Nidhi.png"
@@ -317,7 +304,7 @@
                                             </div>
                                         </div>
                                     </div>
-                                    <div class="carousel-item carousel-item-product">
+                                    <div class="carousel-item carousel-item-product d-md-flex align-items-stretch">
                                         <div class="card card-product">
                                             <div class="img-wrapper text-center mx-auto pt-3"><img
                                                     class="d-block img-wrapper-product" src="Image/Easyshop.png"
@@ -340,7 +327,7 @@
                                             </div>
                                         </div>
                                     </div>
-                                    <div class="carousel-item carousel-item-product">
+                                    <div class="carousel-item carousel-item-product d-md-flex align-items-stretch">
                                         <div class="card card-product">
                                             <div class="img-wrapper text-center mx-auto pt-3"><img
                                                     class="d-block img-wrapper-product" src="Image/medlife.png"
@@ -360,7 +347,7 @@
                                             </div>
                                         </div>
                                     </div>
-                                    <div class="carousel-item carousel-item-product">
+                                    <div class="carousel-item carousel-item-product d-md-flex align-items-stretch">
                                         <div class="card card-product">
                                             <div class="img-wrapper text-center mx-auto pt-3"><img
                                                     class="d-block img-wrapper-product" src="Image/icoms.jpg"
@@ -377,6 +364,20 @@
 
                                 </div>
                             </div>
+                            
+                        </div>
+                        
+                        <div class="col-md-12 text-center">
+                            <button class="carousel-control-prev carousel-control-prev-product" type="button"
+                                data-bs-target="#carouselProductId" data-bs-slide="prev" >
+                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Previous</span>
+                            </button>
+                            <button class="carousel-control-next carousel-control-next-product" type="button"
+                                data-bs-target="#carouselProductId" data-bs-slide="next">
+                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Next</span>
+                            </button>
                         </div>
                     </div>
                 </div>
@@ -688,10 +689,10 @@
             const mediapixelQueries = [
                 '(max-width:576px)',
                 '(max-width:767px) and (min-width:577px)',
-                '(min-width:768px) and (max-width:992px)',
+                // '(min-width:768px) and (max-width:991px)',
                 // '(min-width:993px) and (max-width:1013px)',
                 // '(min-width:1014px) and (max-width:1222px)',
-                '(min-width:993px)'
+                '(min-width:768px)'
             ];
             const matchingpixelQuery = mediapixelQueries.find(mediapixelQueries =>
                 window.matchMedia(mediapixelQueries).matches
@@ -702,10 +703,11 @@
             } else if (matchingpixelQuery == "(max-width:767px) and (min-width:577px)") {
                 // console.log(2);
                 $(multipleCardCarousel).addClass("slide");
-            } else if (matchingpixelQuery == "(min-width:768px) and (max-width:992px)") {
-                // console.log(4);
-                $(multipleCardCarousel).addClass("slide");
             } 
+            // else if (matchingpixelQuery == "(min-width:769px) and (max-width:991px)") {
+            //     // console.log(4);
+            //     $(multipleCardCarousel).addClass("slide");
+            // } 
             // else if (matchingpixelQuery == "(min-width:993px) and (max-width:1013px)") {
             //     // console.log(5);
             //     $(multipleCardCarousel).addClass("slide");
@@ -714,7 +716,7 @@
             //     // console.log(6);
             //     $(multipleCardCarousel).addClass("slide");
             // } 
-            else if (matchingpixelQuery == "(min-width:993px)") {
+            else if (matchingpixelQuery == "(min-width:768px)") {
                 // console.log(7);
                 var carousel = new bootstrap.Carousel(multipleCardCarousel, {
                     interval: false,
