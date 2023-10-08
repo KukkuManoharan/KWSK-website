@@ -330,7 +330,7 @@ html {
 
 #cards_clients {
   text-align: center;
-  background: #F7F7F7;
+  background: lightgray;
 }
 
 #cards_clients .container {
@@ -366,6 +366,16 @@ html {
   -ms-transform: scale(1.15);
   -o-transform: scale(1.15);
   transform: scale(1.15);
+}
+.carousel .carousel-indicators-clients {
+  margin-bottom: -50px;
+}
+
+.carousel .carousel-indicators-clients button {
+  width: 10px;
+ height: 10px;
+ border-radius: 100%;
+ background-color: darkblue;
 }
 
 /* Clients section finish*/
