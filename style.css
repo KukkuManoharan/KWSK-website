@@ -309,6 +309,86 @@ html {
 
 
 /* Services section finish*/
+
+/* Clients section*/
+
+.clients-section-mainhead span {
+  display: inline-block;
+  font-size: 4rem;
+  font-weight: bolder;
+  opacity: .7;
+  text-transform: uppercase;
+  animation: flip 3s infinite;
+  animation-delay: calc(.3s * var(--i))
+}
+
+.clients-section-subhead {
+  font-size: 1rem;
+  font-weight: bold;
+  opacity: .4;
+}
+
+#cards_clients {
+  text-align: center;
+  background: #F7F7F7;
+}
+
+#cards_clients .container {
+  padding-top: 5px;
+  padding-bottom: 10px;
+}
+
+#cards_clients .card-flyer {
+  border-radius: 5px;
+}
+ 
+#cards_clients .card-flyer .image-box {
+  background: #ffffff;
+  overflow: hidden;
+  box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.50);
+  border-radius: 5px;
+  max-width: fit-content; 
+  padding: 20px;
+}
+
+#cards_clients .card-flyer .image-box img {
+  -webkit-transition: all .9s ease;
+  -moz-transition: all .9s ease;
+  -o-transition: all .9s ease;
+  -ms-transition: all .9s ease;
+  height: 200px;
+}
+
+#cards_clients .card-flyer:hover .image-box img {
+  opacity: 0.7;
+  -webkit-transform: scale(1.15);
+  -moz-transform: scale(1.15);
+  -ms-transform: scale(1.15);
+  -o-transform: scale(1.15);
+  transform: scale(1.15);
+}
+
+/* Clients section finish*/
+
+/* contact section*/
+
+.contact-section-mainhead span {
+  display: inline-block;
+  font-size: 4rem;
+  font-weight: bolder;
+  opacity: .7;
+  text-transform: uppercase;
+  animation: flip 3s infinite;
+  animation-delay: calc(.3s * var(--i))
+}
+
+.contact-section-subhead {
+  font-size: 1rem;
+  font-weight: bold;
+  opacity: .4;
+}
+
+/* contact section finish*/
 /* Section page main heading text flip */
 @keyframes flip {
 
@@ -361,7 +441,21 @@ html {
     font-size: 3rem;
     font-weight: bold;
   }
-
+  #cards_clients .card-flyer .image-box {
+    max-width: fit-content; 
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
+  .clients-section-mainhead span {
+    font-size: 3rem;
+    font-weight: bold;
+  }
+  
+  .contact-section-mainhead span {
+    font-size: 3rem;
+    font-weight: bold;
+  }
 }
 
 @media only screen and (max-width:767px) and (min-width:577px) {
