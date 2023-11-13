@@ -32,8 +32,8 @@ html {
 
 /* Section 1 close*/
 .imageslide {
-  min-height: 80vh;
-  max-height: 80vh;
+  min-height: 91vh;
+  max-height: 91vh;
 }
 
 /* About section  */
@@ -41,6 +41,7 @@ html {
 /* Section 2 */
 #about {
   padding-top: 0px;
+  background-color: rgb(238,238,238);
 }
 
 /* Section 2 close*/
@@ -70,14 +71,14 @@ html {
 }
 
 .about-section-card-title {
-  color: firebrick;
+  color: orangered;
   opacity: 1.;
   font-size: 8rem;
   font-weight: bolder;
   animation-name: spin, depth;
   animation-timing-function: linear;
   animation-iteration-count: infinite;
-  animation-duration: 6s;
+  animation-duration: 10s;
 }
 
 @keyframes spin {
@@ -136,6 +137,9 @@ html {
 /* About section finish*/
 
 /* Product section */
+#product{
+  background-color:  rgb(238,238,238);
+}
 
 .product-section-mainhead span {
   display: inline-block;
@@ -197,6 +201,9 @@ html {
 /* Product section finish*/
 
 /* Services section */
+#services{
+  background-color:  rgb(238,238,238);
+}
 
 .services-section-mainhead span {
   display: inline-block;
@@ -312,6 +319,9 @@ html {
 /* Services section finish*/
 
 /* Clients section*/
+#clients{
+  background-color: rgb(238,238,238);
+}
 
 .clients-section-mainhead span {
   display: inline-block;
@@ -349,6 +359,7 @@ html {
   box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.50);
   border-radius: 5px;
   max-width: fit-content;
+  max-width: -moz-fit-content;
   padding: 20px;
 }
 
@@ -383,6 +394,9 @@ html {
 /* Clients section finish*/
 
 /* contact section*/
+#contact{
+  background-color: rgb(238,238,238);
+}
 
 .contact-section-mainhead span {
   display: inline-block;
@@ -535,6 +549,7 @@ html {
 
   #cards_clients .card-flyer .image-box {
     max-width: fit-content;
+    max-width: -moz-fit-content;
     margin-left: auto;
     margin-right: auto;
   }
