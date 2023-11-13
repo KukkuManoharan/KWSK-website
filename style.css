@@ -30,11 +30,15 @@ html {
   padding-top: 0px;
 }
 
-/* Section 1 close*/
-.imageslide {
+/* .imageslide {
   min-height: 91vh;
   max-height: 91vh;
+} */
+.carousel-item img {
+  height: 100vh; 
+  object-fit: cover; 
 }
+/* Section 1 close*/
 
 /* About section  */
 
@@ -507,10 +511,10 @@ html {
 /* Media part */
 
 @media only screen and (max-width:576px) {
-  .imageslide {
-    min-height: 75vh;
-    max-height: 75vh;
-  }
+  /* .imageslide {
+    min-height: 78vh;
+    max-height: 78vh;
+  } */
 
   .about-section-mainhead span {
     font-size: 3rem;
@@ -587,10 +591,10 @@ html {
 }
 
 @media only screen and (max-width:767px) and (min-width:577px) {
-  .imageslide {
-    min-height: 80vh;
-    max-height: 80vh;
-  }
+  /* .imageslide {
+    min-height: 85vh;
+    max-height: 85vh;
+  } */
 
   .card-product {
     min-height: 75vh;
@@ -606,10 +610,10 @@ html {
 }
 
 @media only screen and (min-width:768px) and (max-width:991px) {
-  .imageslide {
+  /* .imageslide {
     min-height: 85vh;
     max-height: 85vh;
-  }
+  } */
 
   .about-section-headertext-div2 {
     font-size: 1.5rem;

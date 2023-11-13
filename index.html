@@ -1071,6 +1071,7 @@
     <script>
         $(document).ready(function () {
             $('a[href^="#"]').on('click', function (event) {
+                var screenWidth = window.innerWidth || document.documentElement.clientWidth;
                 var target = $($(this).attr('href'));
                 if (target.length) {
                     event.preventDefault();
@@ -1080,10 +1081,18 @@
                             scrollTop: target.offset().top - 55
                         }, 500);
                     } else {
-
+                        if(screenWidth<=991)
+                        {                            
+                        $('html, body').stop().animate({
+                            scrollTop: target.offset().top - 300
+                        }, 500);
+                        }
+                        else{                         
                         $('html, body').stop().animate({
                             scrollTop: target.offset().top - 50
                         }, 500);
+                        }
+
                     }
                 }
             });
