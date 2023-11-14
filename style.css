@@ -504,8 +504,12 @@ html {
 .contact-div-section2 .btsend:hover {
   background: olivedrab;
 }
+.contact-div-section2 .btsend:active {
+  transform: scale(0.95);
+}
 
 /* contact section finish*/
+
 /* Section page main heading text flip */
 @keyframes flip {
 
