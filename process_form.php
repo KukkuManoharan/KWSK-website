@@ -23,12 +23,19 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $headers = "From: $your_email";
 
     // Send the email
-    mail($to, $subject, $message, $headers);
+    if(mail($to, $subject, $message, $headers)){
+        $result = "Message sent successfully";
+    }
+    else
+    {
+        $error = "wrong mail  id";
+    }
 
     // You can redirect the user to a thank you page or display a success message here
-    echo "Thank you for your submission!";
+  //  echo "Thank you for your submission!";
 } else {
     // Handle invalid request method
-    echo "Invalid request method";
+  //  echo "Invalid request method";
+  $error = "Invalid request method";
 }
 ?>

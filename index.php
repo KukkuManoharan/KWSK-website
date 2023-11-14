@@ -1,3 +1,44 @@
+<?php
+if (isset($_POST['sendmail'])) {
+    $first_name = $_POST['first_name'];
+    $last_name = $_POST['last_name'];
+    $mobile_number = $_POST['mobile_number'];
+    $your_email = $_POST['your_email'];
+    $purpose = $_POST['purpose'];
+    $your_message = $_POST['your_message'];
+
+    // Replace 'your@email.com' with the actual email address where you want to receive the form submissions
+    $to = 'kwickstackssolutions@gmail.com';
+    $subject = 'New message from website';
+    
+    // Build the email message
+    $message = "First Name: $first_name\n";
+    $message .= "Last Name: $last_name\n";
+    $message .= "Mobile Number: $mobile_number\n";
+    $message .= "Email: $your_email\n";
+    $message .= "Purpose: $purpose\n";
+    $message .= "Message: $your_message\n";
+
+    // Additional headers
+    $headers = "From: $your_email";
+
+    // Send the email
+    if(mail($to, $subject, $message, $headers)){
+        $result = "Message sent successfully";
+    }
+    else
+    {
+        $error = "wrong mail id";
+    }
+
+    // You can redirect the user to a thank you page or display a success message here
+  //  echo "Thank you for your submission!";
+} else {
+    // Handle invalid request method
+  //  echo "Invalid request method";
+  $error = "Invalid request method";
+}
+?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -928,13 +969,13 @@
                             </div>
                             <div class="col-lg-6 contact-div-section2">
                                 <div class="row my-5 mx-5">
-                                    <form action="process_form.php" method="post">
+                                    <form method="post">
                                         <div class="col-12">
                                             <h4 class="text-center mb-5">GET IN TOUCH</h4>
                                         </div>
                                         <div class="col-12">
                                             <label for="first_name" class="my-2">First Name</label>
-                                            <input type="text" name="first_name" id="first_name" class="form-control">
+                                            <input type="text" name="first_name" id="first_name" class="form-control" required>
                                         </div>
                                         <div class="col-12">
                                             <label for="last_name" class="my-2">Last Name</label>
@@ -945,7 +986,7 @@
                                         </div>
                                         <div class="col-12">
                                             <input type="text" name="mobile_number" id="mobile_number"
-                                                class="form-control w-100">
+                                                class="form-control w-100" required>
                                         </div>
                                         <div class="col-12">
                                             <label for="your_email" class="my-3">E-mail</label>
@@ -980,8 +1021,16 @@
                                             <textarea id="your_message" class="form-control" rows="3"></textarea>
                                         </div>
                                         <div class="col-12 text-center">
-                                            <input type="submit" name="send" class="btsend mt-3" value="Send">
+                                            <input type="submit" name="sendmail" class="btsend mt-3" value="Send">
                                         </div>
+                                        <strong>
+                                            <?php if(!empty($result)){
+                                                echo $result;
+                                            }?>
+                                            <?php if(!empty($error)){
+                                                echo $error;
+                                            }?>
+                                        </strong>
                                     </form>
                                 </div>
                             </div>
